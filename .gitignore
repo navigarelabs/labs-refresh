@@ -131,3 +131,4 @@ dist
 
 # visual Studio Code stuff
 extensions.json
+package-lock.json

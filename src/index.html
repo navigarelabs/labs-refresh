@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="w-screen h-screen">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+  <body class="w-screen h-screen">
+    <div class="flex flex-row w-full h-full text-white">
+      <div id="sideMenu" class="z-50 flex-none w-24 h-full transition-all duration-200 ease-in-out">
+        <aside class="h-full bg-nvg-blue">
+            <div class="flex flex-row hover:text-nvg-green">
+              <button id="sideMenuToggler" class="flex-none w-16 h-16 px-4 py-3 mx-4 my-2 bg-transparent border-none">
+                <i class="text-4xl bx bx-menu"></i>
+              </button>
+              <div class="flex-1 h-16 mx-4 my-2">
+                <img src="../images/Naviagare-Logo-Light.png" class="object-fill h-16">
+              </div>
+            </div>
+            <div class="w-full h-1 mb-4 bg-nvg-green"></div>
+            <div class="mx-4">
+              <nav>
+                <ul>
+
+                  <li>
+                    <div class="container mb-6" id="markets">
+                      <a href="#">
+                        <div class="flex flex-row w-full h-16 hover:bg-nvg-green active:bg-nvg-gold">
+                          <button class="flex-none w-16 h-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                            <i class="text-3xl bx bx-line-chart"></i>
+                          </button>
+                          <div class="flex-1 hidden h-16 mx-0 my-0 nvg-menu-item">
+                            <div class="flex items-center h-full">
+                              <span class="text-3xl">Markets</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="invisible hidden h-0 ml-12 overflow-auto transition-all ease-in-out origin-top transform opacity-0 nvg-submenu duration-400">
+                        <ul>
+                          <li>
+                            <a href="#sharesSection">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bx-pie-chart-alt-2"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full ">
+                                    <span class="text-xl">Shares</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#shareholderSection">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bx-notepad"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Shareholders</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-dashboard"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Market Dashboard</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="container mb-6" id="earnings">
+                      <a href="#">
+                        <div class="flex flex-row w-full h-16 hover:bg-nvg-green active:bg-nvg-gold">
+                          <button class="flex-none w-16 h-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                            <i class="text-3xl bx bx-bar-chart"></i>
+                          </button>
+                          <div class="flex-1 hidden h-16 mx-0 my-0 nvg-menu-item">
+                            <div class="flex items-center h-full">
+                              <span class="text-3xl">Earnings</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="invisible hidden h-0 ml-12 overflow-auto transition-all ease-in-out origin-top transform opacity-0 nvg-submenu duration-400">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-report"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Calls & Reports</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-spreadsheet"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Data Explorer</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-chat"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">NaviChat BETA</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="container mb-6" id="property">
+                      <a href="#">
+                        <div class="flex flex-row w-full h-16 hover:bg-nvg-green active:bg-nvg-gold">
+                          <button class="flex-none w-16 h-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                            <i class="text-3xl bx bx-building-house"></i>
+                          </button>
+                          <div class="flex-1 hidden h-16 mx-0 my-0 nvg-menu-item">
+                            <div class="flex items-center h-full">
+                              <span class="text-3xl">Property</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="invisible hidden h-0 ml-12 overflow-auto transition-all ease-in-out origin-top transform opacity-0 nvg-submenu duration-400">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-map"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Country</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bxs-calendar-event"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">Listed Companies</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="container mb-6" id="banking">
+                      <a href="#">
+                        <div class="flex flex-row w-full h-16 hover:bg-nvg-green active:bg-nvg-gold">
+                          <button class="flex-none w-16 h-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                            <i class="text-3xl bx bxs-bank"></i>
+                          </button>
+                          <div class="flex-1 hidden h-16 mx-0 my-0 nvg-menu-item">
+                            <div class="flex items-center h-full">
+                              <span class="text-3xl">Banking Data</span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="invisible hidden h-0 ml-12 overflow-auto transition-all ease-in-out origin-top transform opacity-0 nvg-submenu duration-400">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
+                                <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
+                                  <i class="text-xl bx bx-money"></i>
+                                </button>
+                                <div class="flex-1 mx-0 my-0 nvg-submenu-item">
+                                  <div class="flex items-center h-full">
+                                    <span class="text-xl">BA 900 Explorer</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+        </aside>
+      </div>
+      <div class="flex flex-col w-full text-black bg-gray-500">
+        <div class="flex items-center justify-center flex-none w-full h-20 bg-nvg-blue border-nvg-green">
+          <div class="flex w-3/4 h-12 px-2 py-1 text-2xl bg-transparent border-b-2">
+            <input class="w-full h-full text-white bg-transparent outline-none" type="text" placeholder="Search...">
+            <div class="flex items-center justify-center w-12 h-12 text-white hover:text-nvg-green active:text-nvg-gold">
+              <a href="#">
+                <button>
+                  <i class="text-4xl bx bx-search-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="flex-col items-center justify-center flex-1 overflow-y-scroll bg-white scroll-smooth scroll-pt-5">
+
+          <div id="sharesSection" class="flex flex-col items-center justify-center w-full my-20">
+            <div class="flex items-center w-10/12 px-0 py-8 text-2xl ">
+              <div><i class="bx bx-pie-chart-alt-2"></i></div>
+              <span class="mx-2">
+                Shares
+              </span>
+              <div class="w-full h-1 mx-2 bg-nvg-blue"></div>
+            </div>
+            
+            <div class="flex flex-col flex-none w-4/5 bg-white lg:flex-row min-h-80 lg:max-h-96">
+              <div class="flex flex-col flex-1 border-2 border-t-0 border-nvg-blue max-h-96 lg:min-w-96">
+                  <div class="flex items-center justify-between flex-none h-12 px-1 font-semibold text-white bg-nvg-blue">
+                      <div class="flex items-center w-full border-b-2 border-white">
+                          <div class="flex items-center w-full h-8 px-2 py-1 text-base bg-transparent lg:text-xl ">
+                              <input id="shareSearchBar" class="w-full h-full bg-transparent outline-none" type="text" placeholder="Search shares">
+                          </div>
+                          <div class="flex items-center justify-center w-1/4 h-full text-white">
+                              <i class="text-xl bx bx-search-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="shareTableHeader" class="flex justify-between flex-none font-semibold text-white border-b-2 border-nvg-blue tableRow bg-nvg-blue">
+                      <div class="flex-1 pl-1 border-nvg-blue">Code</div>
+                      <div class="flex-1 pl-1 border-nvg-blue">Name</div>
+                  </div>
+                  <div class="flex-1 w-full overflow-y-scroll bg-white">
+                      <div id="shareTable" class="flex flex-col w-full">
+                      </div>
+                  </div>
+              </div>
+              <div class="relative flex-none max-h-40 lg:max-h-96 lg:min-w-96 aspect-square group">
+                  <div class="absolute w-full h-0 overflow-hidden border-nvg-blue group-hover:h-full">
+                    <img class="object-fill w-full h-full" src="../images/hint.png" alt="">
+                  </div>
+                  <div class="flex flex-col justify-center h-full px-4 overflow-hidden text-sm text-white transition-all duration-200 ease-linear lg:px-12 group-hover:justify-end bg-nvg-green group-hover:z-10 group-hover:opacity-75 group-hover:bg-gradient-to-tr group-hover:from-nvg-green group-hover:to-white">
+                    <span class="mb-2 font-semibold group-hover:text-nvg-blue">
+                      Search and explore shares
+                    </span>
+                    <p class="group-hover:hidden">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Totam labore dicta beatae incidunt, nobis.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div id="shareholderSection" class="flex flex-col items-center justify-center w-full my-20">
+
+            <div class="flex items-center w-10/12 px-0 py-8 text-2xl ">
+              <div><i class="bx bx-notepad"></i></div>
+              <span class="mx-2">
+                Shareholders
+              </span>
+              <div class="w-full h-1 mx-2 bg-nvg-blue"></div>
+            </div>
+
+            <div class="flex flex-col flex-none w-4/5 bg-white lg:flex-row min-h-80 lg:max-h-96">
+              <div class="flex flex-col flex-1 border-2 border-t-0 border-nvg-blue max-h-96 lg:min-w-96">
+                  <div class="flex items-center justify-between flex-none h-12 px-1 font-semibold text-white bg-nvg-blue">
+                      <div class="flex items-center w-full border-b-2 border-white">
+                          <div class="flex items-center w-full h-8 px-2 py-1 text-base bg-transparent lg:text-xl ">
+                              <input id="shareholderSearchBar" class="w-full h-full bg-transparent outline-none" type="text" placeholder="Search shareholders">
+                          </div>
+                          <div class="flex items-center justify-center w-1/4 h-full text-white">
+                              <i class="text-xl bx bx-search-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="shareholderTableHeader" class="flex justify-between flex-none font-semibold text-white border-b-2 border-nvg-blue tableRow bg-nvg-blue">
+                      <div class="flex-1 pl-1 border-nvg-blue">Name</div>
+                  </div>
+                  <div class="flex-1 w-full overflow-y-scroll bg-white">
+                      <div id="shareholderTable" class="flex flex-col w-full">
+                      </div>
+                  </div>
+              </div>
+              <div class="relative flex-none max-h-40 lg:max-h-96 lg:min-w-96 aspect-square group">
+                  <div class="absolute w-full h-0 overflow-hidden border-nvg-blue group-hover:h-full">
+                    <img class="object-fill w-full h-full" src="../images/hint.png" alt="">
+                  </div>
+                  <div class="flex flex-col justify-center h-full px-4 overflow-hidden text-sm text-white transition-all duration-200 ease-linear group-hover:justify-end bg-nvg-green group-hover:z-10 group-hover:opacity-75 group-hover:bg-gradient-to-tr group-hover:from-nvg-green group-hover:to-white">
+                    <span class="mb-2 font-semibold group-hover:text-nvg-blue">
+                      Search and explore shareholders
+                    </span>
+                    <p class="group-hover:hidden">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Totam labore dicta beatae incidunt, nobis.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer" class="grid grid-cols-1 p-6 text-white bg-nvg-blue lg:flex lg:flex-none lg:justify-evenly">
+            <div class="pb-6 border-b-2 lg:pr-8 lg:border-b-0 lg:lg:border-r-2 border-nvg-green">
+                <div class="mb-4 font-semibold">
+                    <span>
+                        QUICK LINKS
+                    </span>
+                </div>
+              <div class=" hover:text-nvg-green active:text-nvg-gold">
+                <a href="#">
+                  <span>
+                    WHO WE ARE
+                  </span>
+                </a>
+              </div>
+
+              <div class=" hover:text-nvg-green active:text-nvg-gold">
+                <a href="#">
+                  <span>
+                    WHAT WE DO
+                  </span>
+                </a>
+              </div>
+
+              <div class=" hover:text-nvg-green active:text-nvg-gold">
+                <a href="#">
+                  <span>
+                    CONTACT US
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex flex-col pb-6 border-b-2 lg:pr-8 lg:border-b-0 lg:border-r-2 border-nvg-green justify-evenly">
+              <div class="flex flex-row">
+                <div>
+                  <i class="bx bxs-map"></i>
+                </div>
+                <div>
+                  <span class="mx-1">
+                    51 West Street, Houghton, Johannesburg
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex flex-row">
+                <div>
+                  <i class="bx bxs-phone"></i>
+                </div>
+                <div>
+                  <span class="mx-1">
+                    +27 11 853 8700
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex flex-row hover:text-nvg-green active:text-nvg-gold">
+                <div>
+                  <i class="bx bxs-envelope"></i>
+                </div>
+                <div>
+                  <a href="mailto:info@navigare.co.za">
+                    <span class="mx-1">
+                      info@navigare.co.za
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex flex-row">
+                <div>
+                  <i class="bx bx-mail-send"></i>
+                </div>
+                <div>
+                  <span class="mx-1">
+                    PostNet Suite 520, PrivateBag X1 Melrose Arch, 2076
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-evenly">
+              <div class="flex flex-row hover:text-nvg-green active:text-nvg-gold">
+                <div>
+                  <i class="bx bxs-file-pdf"></i>
+                </div>
+                <div>
+                  <a href="#">
+                    <span class="mx-1">
+                      Complaints Resolution
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex flex-row hover:text-nvg-green active:text-nvg-gold">
+                <div>
+                  <i class="bx bxs-file-pdf"></i>
+                </div>
+                <div>
+                  <a href="#">
+                    <span class="mx-1">
+                      Disclaimer, Confidentiality and POPI Privacy Statement
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex flex-row">
+                <div>
+                  <i class="bx bxs-copyright"></i>
+                </div>
+                <div>
+                  <span class="mx-1">
+                    Copyright 2020 Navigare. All Rights Reserved.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./table.js"></script>
+  </body>
+  
+</html>
