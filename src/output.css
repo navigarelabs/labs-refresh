@@ -757,6 +757,10 @@ video {
   width: 100vw;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -795,6 +799,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {
@@ -896,6 +904,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-nvg-green-light-shade {
+  --tw-bg-opacity: 1;
+  background-color: rgb(137 210 186 / var(--tw-bg-opacity));
+}
+
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
@@ -903,6 +916,14 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .px-0 {

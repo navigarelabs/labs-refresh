@@ -12,7 +12,7 @@
   <body class="w-screen h-screen">
     <div class="flex flex-row w-full h-full text-white">
       <div id="sideMenu" class="z-50 flex-none h-full transition-all duration-200 ease-in-out w-96">
-        <aside class="h-full border-r-2 bg-nvg-blue">
+        <aside class="h-full bg-nvg-blue">
             <div class="flex flex-row hover:text-nvg-green">
               <button id="sideMenuToggler" class="flex-none w-16 h-16 px-4 py-3 mx-4 my-2 bg-transparent border-none">
                 <i class="text-4xl bx bx-menu"></i>
@@ -43,7 +43,7 @@
                       <div class="ml-12 overflow-auto transition-all ease-in-out origin-top transform opacity-100 nvg-submenu duration-400">
                         <ul>
                           <li>
-                            <a href="./markets.html#sharesSection">
+                            <a href="#sharesSection">
                               <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
                                 <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
                                   <i class="text-xl bx bx-pie-chart-alt-2"></i>
@@ -57,7 +57,7 @@
                             </a>
                           </li>
                           <li>
-                            <a href="./markets.html#shareholderSection">
+                            <a href="#shareholderSection">
                               <div class="flex flex-row w-full hover:text-nvg-green active:text-nvg-gold">
                                 <button class="flex-none w-16 px-0 py-0 mx-0 my-0 bg-transparent border-none">
                                   <i class="text-xl bx bx-notepad"></i>
@@ -255,10 +255,79 @@
           </div>
           
         </div>
+
+        <div id="hint" class="absolute z-50 flex items-center flex-1 h-full p-16 bg-nvg-green">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae sunt nemo, quasi dolore magnam nobis libero distinctio tempore ipsam voluptatum. Nesciunt sed amet quasi quibusdam officia illum minima quam?
+        </div>
+
         <div class="flex-col items-center justify-center flex-1 overflow-y-scroll bg-white scroll-smooth scroll-pt-5">
 
-          <div id="mainContent" class="w-full h-full border-l-0 border-nvg-green bg-nvg-blue">
-            <video src="../videos/Web_Video_newlogo_only_02_Opt2.mp4" class="w-full h-full" muted autoplay loop preload="auto"></video>
+          <div id="sharesSection" class="flex flex-col items-center justify-center w-full my-20">
+            <div class="flex items-center w-10/12 px-0 py-8 text-2xl ">
+              <div><i class="bx bx-pie-chart-alt-2"></i></div>
+              <span class="mx-2">
+                Shares
+              </span>
+              <div class="w-full h-1 mx-2 bg-nvg-blue"></div>
+            </div>
+            
+            <div class="flex flex-col flex-none w-4/5 bg-white lg:flex-row min-h-80 lg:max-h-96">
+              <div class="flex flex-col flex-1 border-2 border-t-0 border-nvg-blue max-h-96 lg:min-w-96">
+                  <div class="flex items-center justify-between flex-none h-12 px-1 font-semibold text-white bg-nvg-blue">
+                      <div class="flex items-center w-full border-b-2 border-white">
+                          <div class="flex items-center w-full h-8 px-2 py-1 text-base bg-transparent lg:text-xl ">
+                              <input id="shareSearchBar" class="w-full h-full bg-transparent outline-none" type="text" placeholder="Search shares">
+                          </div>
+                          <div class="flex items-center justify-center w-1/4 h-full text-white">
+                              <i class="text-xl bx bx-search-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="shareTableHeader" class="flex justify-between flex-none font-semibold text-white border-b-2 border-nvg-blue tableRow bg-nvg-blue">
+                      <div class="flex-1 pl-1 border-nvg-blue">Code</div>
+                      <div class="flex-1 pl-1 border-nvg-blue">Name</div>
+                  </div>
+                  <div class="flex-1 w-full overflow-y-scroll bg-white">
+                      <div id="shareTable" class="flex flex-col w-full">
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div id="shareholderSection" class="flex flex-col items-center justify-center w-full my-20">
+
+            <div class="flex items-center w-10/12 px-0 py-8 text-2xl ">
+              <div><i class="bx bx-notepad"></i></div>
+              <span class="mx-2">
+                Shareholders
+              </span>
+              <div class="w-full h-1 mx-2 bg-nvg-blue"></div>
+            </div>
+
+            <div class="flex flex-col flex-none w-4/5 bg-white lg:flex-row min-h-80 lg:max-h-96">
+              <div class="flex flex-col flex-1 border-2 border-t-0 border-nvg-blue max-h-96 lg:min-w-96">
+                  <div class="flex items-center justify-between flex-none h-12 px-1 font-semibold text-white bg-nvg-blue">
+                      <div class="flex items-center w-full border-b-2 border-white">
+                          <div class="flex items-center w-full h-8 px-2 py-1 text-base bg-transparent lg:text-xl ">
+                              <input id="shareholderSearchBar" class="w-full h-full bg-transparent outline-none" type="text" placeholder="Search shareholders">
+                          </div>
+                          <div class="flex items-center justify-center w-1/4 h-full text-white">
+                              <i class="text-xl bx bx-search-alt"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div id="shareholderTableHeader" class="flex justify-between flex-none font-semibold text-white border-b-2 border-nvg-blue tableRow bg-nvg-blue">
+                      <div class="flex-1 pl-1 border-nvg-blue">Name</div>
+                  </div>
+                  <div class="flex-1 w-full overflow-y-scroll bg-white">
+                      <div id="shareholderTable" class="flex flex-col w-full">
+                      </div>
+                  </div>
+              </div>
+            </div>
+
           </div>
 
           <div id="footer" class="grid grid-cols-1 p-6 text-white bg-nvg-blue lg:flex lg:flex-none lg:justify-evenly">
