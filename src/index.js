@@ -6,6 +6,8 @@ let markets = document.querySelector("#markets")
 let earnings = document.querySelector("#earnings")
 let property = document.querySelector("#property")
 let banking = document.querySelector("#banking")
+let hint = document.querySelector("#hint")
+let links = document.querySelectorAll(".nvg-submenu li a")
 
 let menuItems = [markets, earnings, property, banking]
 
@@ -60,3 +62,14 @@ menuItems.forEach(menuItem => {
         
     })
 });
+
+links.forEach(link => {
+    link.addEventListener('mouseover', () => {
+        hint.classList.remove('-z-50')
+        hint.classList.add('z-50')
+    })
+    link.addEventListener('mouseout', () => {
+        hint.classList.remove('z-50')
+        hint.classList.add('-z-50')
+    })
+})
