@@ -17,9 +17,11 @@
               <button id="sideMenuToggler" class="flex-none w-16 h-16 px-4 py-3 mx-4 my-2 bg-transparent border-none">
                 <i class="text-4xl bx bx-menu"></i>
               </button>
-              <div class="flex-1 h-16 mx-4 my-2">
-                <img src="../images/Naviagare-Logo-Light.png" class="object-fill h-16">
-              </div>
+              <a href="./index.html#">
+                <div class="flex-1 h-16 mx-4 my-2">
+                  <img src="../images/Naviagare-Logo-Light.png" class="object-fill h-16">
+                </div>
+              </a>
             </div>
             <div class="w-full h-1 mb-4 bg-nvg-green"></div>
             <div class="mx-4">
@@ -241,7 +243,7 @@
             </div>
         </aside>
       </div>
-      <div class="flex flex-col w-full text-black bg-gray-500">
+      <div class="relative flex flex-col w-full text-black bg-gray-500">
         <div class="flex items-center justify-center flex-none w-full h-20 bg-nvg-blue border-nvg-green">
           <div class="flex w-3/4 h-12 px-2 py-1 text-2xl bg-transparent border-b-2">
             <input class="w-full h-full text-white bg-transparent outline-none" type="text" placeholder="Search...">
@@ -256,8 +258,13 @@
           
         </div>
 
-        <div id="hint" class="absolute -z-50 flex items-center flex-1 h-full p-16 bg-nvg-green">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repudiandae sunt nemo, quasi dolore magnam nobis libero distinctio tempore ipsam voluptatum. Nesciunt sed amet quasi quibusdam officia illum minima quam?
+        <div id="hint" class="absolute inset-0 flex flex-col justify-center w-full h-full p-16 -z-50 bg-nvg-green opacity-95">
+          <div class="flex items-center mb-12 text-3xl">
+            <i class="bx bx-info-circle"></i>
+            <p id="hintHeading" class="ml-4"></p>
+          </div>
+          <div id="hintDescription" class="text-xl">
+          </div>
         </div>
 
         <div class="flex-col items-center justify-center flex-1 overflow-y-scroll bg-white scroll-smooth scroll-pt-5">
